@@ -1,4 +1,3 @@
-
 tms0800
 ========
 tms080x calculation chip emulation, w/ TI-1500 and Sinclair Scientific ROMs
@@ -8,7 +7,7 @@ code provided as is, no warranty
 
 this is a hobby project
 
-you should use code for commercial purpose w/o permission from creators
+you should not use code for commercial purpose w/o permission from creators
 nice if you give credit, mention source(s) if you adopt much of the code
 
 based on work of Ken Shirriff, and others, please visit
