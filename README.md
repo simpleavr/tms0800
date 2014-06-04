@@ -14,6 +14,15 @@ based on work of Ken Shirriff, and others, please visit
 http://righto.com/ti and http://righto.com/sinclair for details
 chris chung (www.simpleavr.com)
 
+June 2014
+
+. additional single pcb design
+. compile tms0800_pcb.c in place of tms0800.c
+. corresponding led_pcb.h defines new IO used
+. employs 2 x 4 digit bubble led
+. mutilplexing w/ 8 col x 8 row, no more charlieplexing
+. remove uart dis-assembler
+
 September 2013
 
 . h/w (UI booster) based on another project (ezs430trainer)
