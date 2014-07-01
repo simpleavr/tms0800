@@ -14,6 +14,9 @@ based on work of Ken Shirriff, and others, please visit
 http://righto.com/ti and http://righto.com/sinclair for details
 chris chung (www.simpleavr.com)
 
+July 2014
+. change code to adopt to V2 PCB layout
+
 June 2014
 
 . additional single pcb design
