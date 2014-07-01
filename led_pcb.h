@@ -75,6 +75,20 @@
 #define SEG_F_P2	0x00
 #define SEG_G_P2	0x00
 #define SEG_d_P2	0x00
+
+#ifdef V2
+
+#define DIGIT_0_P2	(1<<0)
+#define DIGIT_1_P2	(1<<6)
+#define DIGIT_2_P2	(1<<1)
+#define DIGIT_3_P2	(1<<2)
+#define DIGIT_4_P2	(1<<5)
+#define DIGIT_5_P2	(1<<7)
+#define DIGIT_6_P2	(1<<4)
+#define DIGIT_7_P2	(1<<3)
+
+#else
+
 #define DIGIT_0_P2	(1<<0)
 #define DIGIT_1_P2	(1<<6)
 #define DIGIT_2_P2	(1<<1)
@@ -83,6 +97,8 @@
 #define DIGIT_5_P2	(1<<7)
 #define DIGIT_6_P2	(1<<4)
 #define DIGIT_7_P2	(1<<5)
+
+#endif
 
 #define SEGS_BIT_P1(v) \
    (((v & (1<<7)) ? 7 : 0) +\
