@@ -103,6 +103,7 @@ static const char hwkey_map[] = {		// converts to tms080x scan code
 #define FUNC_SINCLAIR	0x17
 #define FUNC_MESSAGE 	0x27
 #define FUNC_ENTER   	0x25
+#define FUNC_SETUP   	0x26
 
 #else
 //     0     1     2     3     4     5     6     7
@@ -144,6 +145,9 @@ static volatile uint8_t scancode = 0x00;
 //________________________________________________________________________________
 #define ST_BLINK	BIT1
 #define ST_MINUS	BIT2
+#define ST_SINCLAIR	BIT3
+#define ST_SLOW    	BIT4
+#define ST_FLASH	BIT5
 
 uint8_t g_state=0;
 //______________________________________________________________________
@@ -175,7 +179,8 @@ void paradiso_loop() {
 		stays -= 0x10;
 		if (!(stays & 0xf0)) {		// setup to use "dark" cycles for key scan
 			P2DIR = 0x00;
-			P2REN = P2OUT = 0xff;	// be inputs w/ pull-ups
+			P2REN = 0xff;
+			P2OUT = 0x00;	// be inputs w/ pull-ups
 			P1DIR = 0xff;
 			P1REN = P1OUT = 0x00;
 		}//if
@@ -191,11 +196,11 @@ void paradiso_loop() {
 		uint8_t row_bit = 1<<key_row;
 		//______ key_row be output low
 		P2REN &= ~row_bit;
-		P2OUT &= ~row_bit;
+		P2OUT |= row_bit;
 		P2DIR |= row_bit;
 
 		//______ check key_col, if low means button depressed
-		if (!(P2IN&(1<<key_col))) {
+		if ((P2IN&(1<<key_col))) {
 			stays = 0x0e;	// key pressed, mark stay w/ 0x0e so we will visit again
 			key_col++;		// and have the same table (row / col)
 		}//if
@@ -210,7 +215,7 @@ void paradiso_loop() {
 		}//else
 
 		P2DIR &= ~row_bit;
-		P2OUT |= row_bit;
+		P2OUT &= ~row_bit;
 		P2REN |= row_bit;
 
 		if (!key_col) {		// last col done, advance row
@@ -269,7 +274,7 @@ void rotate_msg(uint8_t const *ptr) {
 		while (clicks) asm("nop");
 		ptr++;
 	}//while
-	clicks = 200; while (clicks) asm("nop");
+	clicks = 200; while (clicks && !get_key()) asm("nop");
 	//while (!get_key()) asm("nop");
 }
 
@@ -290,39 +295,75 @@ int main(void) {
 
 	_BIS_SR(GIE);
 
-	load_rom(0);			// default ROM is TI Datamath 2500II
-	led_clear();
+
 	// !!!terminate w/ 0xff, NOT null terminated
 	static const uint8_t msg_slow[] = {
 		POS_S, POS_L, POS_o, POS_w, POS__, POS_C, POS_P, POS_u, 0xff,
 	};
+	static const uint8_t msg_fast[] = {
+		POS_F, POS_A, POS_S, POS_t, POS__, POS_C, POS_P, POS_u, 0xff,
+	};
 	static const uint8_t msg_sinclair[] = {
 		POS_S, POS_I, POS_n, POS_C, POS_L, POS_A, POS_I, POS_r, 0xff,
+	};
+	static const uint8_t msg_datamath[] = {
+		POS_d, POS_A, POS_t, POS_A, POS_m, POS_A, POS_t, POS_h, 0xff,
 	};
 
 	uint8_t i=0;
 	char *flash = (char*) 0x1040;				// infomem
-	uint8_t greetings[9], *p = greetings;		// load personalized message from flash
-	for (i=0;i<8;i++) *p++ = *flash++;
+	uint8_t greetings[10], *p = greetings;		// load personalized message from flash
+	for (i=0;i<9;i++) *p++ = *flash++;
+	g_state = greetings[8] & (ST_SINCLAIR|ST_SLOW);			// load only init options
 	greetings[8] = 0xff;
 
+	load_rom(g_state&ST_SINCLAIR ? 1 : 0);		// set default ROM and cpu speed
+	if (g_state&ST_SLOW) {
+		BCSCTL1 = CALBC1_1MHZ;
+		DCOCTL  = CALDCO_1MHZ;
+		TA0CCR0  = 400;
+	}//if
+
+	led_clear();
 	//_______________ code to dectect press-hold-reset
 	while (ticks<100) asm("nop");
 	if (stays == 0x0e) {
 		while (stays == 0x0e) asm("nop");
 		switch (get_key()) {
 			case FUNC_SLOW_CPU: 	// 1/8 speed to show cpu operation
-				rotate_msg(msg_slow);
-				BCSCTL1 = CALBC1_1MHZ;
-				DCOCTL  = CALDCO_1MHZ;
-				TA0CCR0  = 400;
+				rotate_msg(g_state&ST_SLOW ? msg_fast : msg_slow);
+				g_state ^= ST_SLOW;
+				g_state |= ST_FLASH;
+				//BCSCTL1 = CALBC1_1MHZ;
+				//DCOCTL  = CALDCO_1MHZ;
+				//TA0CCR0  = 400;
 				break;
 			case FUNC_SINCLAIR:
-				rotate_msg(msg_sinclair);
-				load_rom(1);		// load alternate ROM 'sinclair scientific'
+				rotate_msg(g_state&ST_SINCLAIR ? msg_datamath : msg_sinclair);
+				g_state ^= ST_SINCLAIR;
+				g_state |= ST_FLASH;
+				//load_rom(1);		// load alternate ROM 'sinclair scientific'
 				break;
 			case FUNC_MESSAGE:		// personal message
 				rotate_msg(greetings);
+				break;
+			//case 0x23: break;
+			case FUNC_SETUP:		// set default startup
+				{
+					output[0] = segs2port1[POS_P];
+					output[1] = segs2port1[POS_r];
+					output[2] = segs2port1[POS_E];
+					output[3] = segs2port1[POS_S];
+					output[4] = segs2port1[POS_S];
+					uint8_t c=0;
+					while (1) {
+						if ((c=get_key())) {
+							output[6] = segs2port1[c>>4];
+							output[7] = segs2port1[c&0x0f];
+						}//if
+					}//while
+					//g_state |= ST_FLASH;
+				}
 				break;
 			//case 0x23: break;
 			case FUNC_ENTER:		// enter greeting text and flash
@@ -381,21 +422,25 @@ int main(void) {
 							output[cpos] = segs2port1[greetings[cpos]];
 						}//if
 					}//while
-					//___________ flash example
-					flash = (char*) 0x1040;
-					char *src   = (char*) greetings;
-					FCTL1 = FWKEY + ERASE;
-					FCTL3 = FWKEY;
-					*flash = 0x0000;
-					FCTL1 = FWKEY + WRT;
-					for (i=0;i<8;i++) *flash++ = *src++;
-					FCTL1 = FWKEY;
-					FCTL3 = FWKEY + LOCK;
-					//
+					g_state |= ST_FLASH;
 				}
 			default: 
 				break;
 		}//switch
+		if (g_state&ST_FLASH) {
+			//___________ write flash
+			flash = (char*) 0x1040;
+			char *src   = (char*) greetings;
+			FCTL1 = FWKEY + ERASE;
+			FCTL3 = FWKEY;
+			*flash = 0x0000;
+			FCTL1 = FWKEY + WRT;
+			for (i=0;i<8;i++) *flash++ = *src++;
+			*flash = g_state;
+			FCTL1 = FWKEY;
+			FCTL3 = FWKEY + LOCK;
+		}//if
+		WDTCTL = 0;		// s/w reset
 		//while (1) {};
 	}//if
 	//
