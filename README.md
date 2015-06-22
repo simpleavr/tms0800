@@ -26,6 +26,19 @@ June 2014
 . mutilplexing w/ 8 col x 8 row, no more charlieplexing
 . remove uart dis-assembler
 
+May 2015
+
+. now does LPM4 auto-off, can eliminate spdt slide switch on pcb
+. auto-off time is 60 seconds of in-activity. 'C' key to swith on
+. move setup function from press-n-hold to 'C' + 5, 6, 7, 8, 9 keys
+. setup is pressing 'C' and in very quick succession one of 6, 7, 8, 9 keys
+. C+5 = button test ('C'+'C' to end test)
+. C+6 = secret message edit (+ key to advance)
+. C+7 = toggle datamath / sinclair roms
+. C+8 = toggle slow / fast cpu
+. C+9 = show secret message
+
+
 September 2013
 
 . h/w (UI booster) based on another project (ezs430trainer)
