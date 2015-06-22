@@ -437,7 +437,6 @@ void step() {
 
 	for (i=0;i<6;i++) _opCode[i] = _opMap[opIdx][i];
 
-
 	switch (opIdx) {
 		case 26+16: // AKCN: A+K -> A until key down on N or D11 [sic]
 			// Patent says sets condition if key down, but real behavior
