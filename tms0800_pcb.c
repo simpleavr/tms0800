@@ -160,9 +160,7 @@ static volatile uint8_t last_sc = 0;
 #define ST_SINCLAIR	BIT3
 #define ST_SLOW    	BIT4
 #define ST_FLASH	BIT5
-
 #define ST_SLEEP	BIT6
-
 
 uint8_t g_state=0;
 //______________________________________________________________________
@@ -378,6 +376,24 @@ int main(void) {
 				break;
 			case FUNC_MESSAGE:		// personal message
 				show_msg(greetings);
+				break;
+			//case 0x23: break;
+			case FUNC_SETUP:		// set default startup
+				{
+					output[0] = segs2port1[POS_P];
+					output[1] = segs2port1[POS_r];
+					output[2] = segs2port1[POS_E];
+					output[3] = segs2port1[POS_S];
+					output[4] = segs2port1[POS_S];
+					uint8_t c=0;
+					while (1) {
+						if ((c=get_key())) {
+							output[6] = segs2port1[c>>4];
+							output[7] = segs2port1[c&0x0f];
+						}//if
+					}//while
+					//g_state |= ST_FLASH;
+				}
 				break;
 			//case 0x23: break;
 			case FUNC_SETUP:		// set default startup
