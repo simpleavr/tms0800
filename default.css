@@ -1,0 +1,32 @@
+
+h2 {
+	background-color:darkseagreen;
+	border:2px solid black;
+	color:black;
+	font-size:150%;
+	padding-top:40;
+	padding-left:20;
+	padding-bottom:20;
+}
+h3 {
+	color:Navy;
+	font-size:120%;
+	padding-top:10;
+	padding-left:20;
+}
+b {
+	color:black;
+}
+body, p, ul, img, iframe {
+	margin-left:40;
+	margin-right:40;
+	font-family:Verdana;
+}
+
+body {
+	background-color:lavender;
+}
+
+img {
+	width:320;
+}
