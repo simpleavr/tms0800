@@ -2,29 +2,11 @@ tms0800
 ========
 tms080x calculation chip emulation, w/ TI-1500 and Sinclair Scientific ROMs
 
-Sep 2013
-code provided as is, no warranty
+Nov 2019
 
-this is a hobby project
-
-you should not use code for commercial purpose w/o permission from creators
-nice if you give credit, mention source(s) if you adopt much of the code
-
-based on work of Ken Shirriff, and others, please visit
-http://righto.com/ti and http://righto.com/sinclair for details
-chris chung (www.simpleavr.com)
-
-July 2014
-. change code to adopt to V2 PCB layout
-
-June 2014
-
-. additional single pcb design
-. compile tms0800_pcb.c in place of tms0800.c
-. corresponding led_pcb.h defines new IO used
-. employs 2 x 4 digit bubble led
-. mutilplexing w/ 8 col x 8 row, no more charlieplexing
-. remove uart dis-assembler
+. create new pcb as bubble led no longer available
+. new pcb adopts 2.5" 3 digit 7 segment LED display (x3 units)
+. minimal source change to employ new hardware design
 
 May 2015
 
@@ -38,6 +20,29 @@ May 2015
 . C+8 = toggle slow / fast cpu
 . C+9 = show secret message
 
+June 2014
+
+. additional single pcb design
+. compile tms0800_pcb.c in place of tms0800.c
+. corresponding led_pcb.h defines new IO used
+. employs 2 x 4 digit bubble led
+. mutilplexing w/ 8 col x 8 row, no more charlieplexing
+. remove uart dis-assembler
+
+July 2014
+. change code to adopt to V2 PCB layout
+
+Sep 2013
+code provided as is, no warranty
+
+this is a hobby project
+
+you should not use code for commercial purpose w/o permission from creators
+nice if you give credit, mention source(s) if you adopt much of the code
+
+based on work of Ken Shirriff, and others, please visit
+http://righto.com/ti and http://righto.com/sinclair for details
+chris chung (www.simpleavr.com)
 
 September 2013
 
