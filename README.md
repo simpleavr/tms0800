@@ -7,6 +7,10 @@ Nov 2019
 . create new pcb as bubble led no longer available
 . new pcb adopts 2.5" 3 digit 7 segment LED display (x3 units)
 . minimal source change to employ new hardware design
+. compile source
+  tms0800_pcb19.c for new 2019 version
+  tms0800_pcb.c for old 2014 version
+  tms0800.c for ti launchpad + paradiso sheild version
 
 May 2015
 

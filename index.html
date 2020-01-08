@@ -1,14 +1,69 @@
 <html>
-<head><link rel="stylesheet" type="text/css" href=".././default.css"></head>
+<head><link rel="stylesheet" type="text/css" href="../default.css"></head>
 <body>
 <br>
 <h2>TMS0803/5 Emulating Calculator Build</h2><br>
+<p><font color="red">[Novermber 2019]</font> New PCB design.</p>
 <p><font color="red">[June 2015]</font> Originally created.</p>
 <p><a href="http://hackaday.com/2014/07/02/pocket-calculator-emulates-pocket-calculator/">Featured in Hackaday.com</a></p>
+<p><a href="https://www.tindie.com/stores/simpleavr/">Soldering Kits avaliable in my tindie store, Store139</a></p>
 <p><b>MSP430G2452 acting as a TMS0803 calculator chip. Emulates TI DataMath 2500II and Sinclair Scientific Calculators.</b></p>
+<p>Scroll down to see original PCB design with 2 x HP QDSP 6064 LED modules</p>
+<h3>2019 New PCB Design</h3><br>
+<p>As the bubble LED modules (HP QDSP-6064) became unavailable, I had create a new PCB design which employs a different LED module that can be source relatively easily.</p>
+<p>The 2 x HP QDSP-6064 4 digits LED modules (+ 1 lone led) has been replaced by 3 x 2.5" 3 digits modules. Below photo shows the original emulator (left) and the new emulator (right).</p>
+<br><img src="images/tms19_1.jpg"><img src="images/tms19_2.jpg"><br><br>
+<p>A SMT coin cell holder replaces the original battery holder and now the unit is thinner.</p>
+<p>Overall PCB is longer for better grip.</p>
+<p>Instead of driving 8 digits of 8 segments (7 segments + dot), the new PCB requires the firmware to drive 9 digits of 8 segments. And we only have 16 IO pins. To overcome this I introduce shared pin for both the 1st digit and the decimal point segment. I.e. this means that there cannot be a show of decimal point for the 1st digit (that led segment cannot be source and sink by the same pin at the same time). This is OK as the 1st digit is basically used to display negative values as a dash.</p>
+<h3>Schematic and Build Hints (2019 version)</h3><br>
+<pre>
+<p>
+<code>
+
+               MSP430G2452
+             -----------------    
+         /|\|                 |  
+          | |                 | 
+          --|RST              |
+            |                 |       3 x 3 digit bubble led
+            |     digit 0 P1.7|----- +-------+ +-------+ +-------+
+            |     digit 1 P2.0|----- | % % % | | % % % | | % % % |
+            |     digit 2 P2.1|----- +-------+ +-------+ +-------+
+            |     digit 3 P2.2|--/-
+            |     digit 4 P2.3|--/-
+            |     digit 5 P2.4|--/-                                            
+            |     digit 6 P2.5|--/-                                            
+            |     digit 7 P2.6|--/-        segment a to g + dot........
+            |                 |       /                                 ....\
+            |                 |      /                                       \
+            |   segment A P1.0|-----+-----+-----+-----+-----+-----+-----+-----+
+            |                 | _=_ | _=_ | _=_ | _=_ | _=_ | _=_ | _=_ | _=_ |
+            |   segment B P1.1|-o o-+-o o-+-o o-+-o o-+-o o-+-o o-+-o o-+-o o-+
+            |                 | _=_ | _=_ | _=_ | _=_ | _=_ | _=_ | _=_ |
+            |   segment c P1.2|-o o-+-o o-+-o o-+-o o-+-o o-+-o o-+-o o-+
+            |                 | _=_ | _=_ | _=_ | _=_ | _=_ | _=_ |
+            |   segment D P1.3|-o o-+-o o-+-o o-+-o o-+-o o-+-o o-+
+            |                 | _=_ | _=_ | _=_ | _=_ | _=_ |
+            |   segment E P1.4|-o o-+-o o-+-o o-+-o o-+-o o-+
+            |                 | _=_ | _=_ | _=_ | _=_ |
+            |   segment F P1.5|-o o-+-o o-+-o o-+-o o-+
+            |                 | _=_ | _=_ | _=_ |
+            |   segment G P1.6|-o o-+-o o-+-o o-+
+            |                 | _=_ |
+            |   segment H P1.7|-o o-+		(not all buttons populated)
+            |                 |  
+             -----------------
+
+
+</code>
+</p>
+</pre>
+</>
+</>
 <br><img src="images/tms0800.jpg"><br><br>
 <br><br>
-<h3>Description</h3><br>
+<h3>Description (original version)</h3><br>
 <p>I got introduced to a web based calculator emulation via <a href="http://forum.43oh.com/topic/4232-simulating-a-ti-calculator-with-crazy-11-bit-opcodes/?p=38140">this thread in 43oh.com forum</a>.</p>
 <p>I got interested and start playing w/ the idea of implementing the emulation on an msp430, my code is based on Mr Ken Shirriff's work from the following pages.</p>
 <p><a href="http://righto.com/ti">TI DataMath 2500II emulations</a></p>
@@ -48,8 +103,6 @@
 <li>1 47k pull-up resistor</li>
 <li>1 0.1uF by-pass capacitor</li>
 </ul>
-</>
-</>
 <p>The miniature red led is to show the "negative" sign. The original calculators have 9 digit displays, since we have only 8 digit, I used a led to show the negative sign when needed.</p>
 <p>You can try different CR2032 cell holders, or even paper-clip diys, the pcb make provisions to mount different cell holders.</p>
 <h3>Schematic, Source Code and Build Hints</h3><br>
