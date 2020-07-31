@@ -1,0 +1,890 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+                              /tmp/ccxSwg8c.o (__mspabi_remu)
+/home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(epilogue.o)
+                              /tmp/ccxSwg8c.o (__mspabi_func_epilog_7)
+/home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+                              /tmp/ccxSwg8c.o (__mspabi_slli)
+/home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+                              /tmp/ccxSwg8c.o (__mspabi_srai)
+/home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+                              /tmp/ccxSwg8c.o (__mspabi_srli)
+/home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libmul_none.a(mpy.o)
+                              /tmp/ccxSwg8c.o (__mspabi_mpyi)
+/home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memcpy.o)
+                              /tmp/ccxSwg8c.o (memcpy)
+/home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_bss.o)
+                              /tmp/ccxSwg8c.o (__crt0_init_bss)
+/home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_movedata.o)
+                              /tmp/ccxSwg8c.o (__crt0_movedata)
+/home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_main.o)
+                              /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o (__crt0_call_main)
+/home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memmove.o)
+                              /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_movedata.o) (memmove)
+/home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memset.o)
+                              /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_bss.o) (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+_opCode             0x6               /tmp/ccxSwg8c.o
+output              0x9               /tmp/ccxSwg8c.o
+regs                0x3c              /tmp/ccxSwg8c.o
+_flgs               0x6               /tmp/ccxSwg8c.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtbegin_no_eh.o
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtbegin_no_eh.o
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtbegin_no_eh.o
+ .text          0x0000000000000000        0x0 /tmp/ccxSwg8c.o
+ .bss           0x0000000000000000        0x0 /tmp/ccxSwg8c.o
+ .text.Port_1   0x0000000000000000        0xe /tmp/ccxSwg8c.o
+ .rodata.opsWithK
+                0x0000000000000000       0x20 /tmp/ccxSwg8c.o
+ .bss._mask     0x0000000000000000        0x2 /tmp/ccxSwg8c.o
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+ .text.__divhi3
+                0x0000000000000000       0x34 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+ .text.__modhi3
+                0x0000000000000000       0x32 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+ .text.__udivhi3
+                0x0000000000000000        0x8 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(epilogue.o)
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(epilogue.o)
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+ .text.__mspabi_slli_n
+                0x0000000000000000       0x20 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+ .text.__mspabi_slll_n
+                0x0000000000000000       0x3e /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+ .text.__mspabi_slll
+                0x0000000000000000        0xc /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+ .text.__mspabi_sllll
+                0x0000000000000000       0x1e /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+ .text.__mspabi_srai_n
+                0x0000000000000000       0x20 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+ .text.__mspabi_sral_n
+                0x0000000000000000       0x3e /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+ .text.__mspabi_sral
+                0x0000000000000000        0xc /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+ .text.__mspabi_srall
+                0x0000000000000000       0x1e /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+ .text.__mspabi_srli_n
+                0x0000000000000000       0x3e /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+ .text.__mspabi_srll_n
+                0x0000000000000000       0x5c /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+ .text.__mspabi_srll
+                0x0000000000000000        0xe /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+ .text.__mspabi_srlll
+                0x0000000000000000       0x20 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libmul_none.a(mpy.o)
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libmul_none.a(mpy.o)
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libmul_none.a(mpy.o)
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memcpy.o)
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memcpy.o)
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memcpy.o)
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_bss.o)
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_bss.o)
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_bss.o)
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_movedata.o)
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_movedata.o)
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_movedata.o)
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_main.o)
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_main.o)
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_main.o)
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memmove.o)
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtend_no_eh.o
+ .data          0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtend_no_eh.o
+ .bss           0x0000000000000000        0x0 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtend_no_eh.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+SFR              0x0000000000000000 0x0000000000000010
+RAM              0x0000000000000200 0x0000000000000100
+INFOMEM          0x0000000000001000 0x0000000000000100
+INFOA            0x00000000000010c0 0x0000000000000040
+INFOB            0x0000000000001080 0x0000000000000040
+INFOC            0x0000000000001040 0x0000000000000040
+INFOD            0x0000000000001000 0x0000000000000040
+ROM              0x000000000000e000 0x0000000000001fe0 xr
+VECT1            0x000000000000ffe0 0x0000000000000002
+VECT2            0x000000000000ffe2 0x0000000000000002
+VECT3            0x000000000000ffe4 0x0000000000000002
+VECT4            0x000000000000ffe6 0x0000000000000002
+VECT5            0x000000000000ffe8 0x0000000000000002
+VECT6            0x000000000000ffea 0x0000000000000002
+VECT7            0x000000000000ffec 0x0000000000000002
+VECT8            0x000000000000ffee 0x0000000000000002
+VECT9            0x000000000000fff0 0x0000000000000002
+VECT10           0x000000000000fff2 0x0000000000000002
+VECT11           0x000000000000fff4 0x0000000000000002
+VECT12           0x000000000000fff6 0x0000000000000002
+VECT13           0x000000000000fff8 0x0000000000000002
+VECT14           0x000000000000fffa 0x0000000000000002
+VECT15           0x000000000000fffc 0x0000000000000002
+RESETVEC         0x000000000000fffe 0x0000000000000002
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+LOAD /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtbegin_no_eh.o
+Address of section .infomem set to 0x1040
+LOAD /tmp/ccxSwg8c.o
+LOAD /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a
+START GROUP
+LOAD /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libmul_none.a
+LOAD /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a
+LOAD /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a
+LOAD /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a
+LOAD /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libnosys.a
+END GROUP
+
+__interrupt_vector_1
+ *(__interrupt_vector_1)
+
+__interrupt_vector_2
+ *(__interrupt_vector_2)
+
+__interrupt_vector_3
+ *(__interrupt_vector_3)
+ *(__interrupt_vector_port1)
+
+__interrupt_vector_4
+ *(__interrupt_vector_4)
+ *(__interrupt_vector_port2)
+
+__interrupt_vector_5
+ *(__interrupt_vector_5)
+ *(__interrupt_vector_usi)
+
+__interrupt_vector_6
+ *(__interrupt_vector_6)
+
+__interrupt_vector_7
+ *(__interrupt_vector_7)
+
+__interrupt_vector_8
+ *(__interrupt_vector_8)
+
+__interrupt_vector_9
+ *(__interrupt_vector_9)
+ *(__interrupt_vector_timer0_a1)
+
+__interrupt_vector_10
+                0x000000000000fff2        0x2
+ *(__interrupt_vector_10)
+ __interrupt_vector_10
+                0x000000000000fff2        0x2 /tmp/ccxSwg8c.o
+ *(__interrupt_vector_timer0_a0)
+
+__interrupt_vector_11
+ *(__interrupt_vector_11)
+ *(__interrupt_vector_wdt)
+
+__interrupt_vector_12
+ *(__interrupt_vector_12)
+
+__interrupt_vector_13
+ *(__interrupt_vector_13)
+
+__interrupt_vector_14
+ *(__interrupt_vector_14)
+
+__interrupt_vector_15
+ *(__interrupt_vector_15)
+ *(__interrupt_vector_nmi)
+
+__reset_vector  0x000000000000fffe        0x2
+ *(__interrupt_vector_16)
+ *(__interrupt_vector_reset)
+ *(.resetvec)
+ .resetvec      0x000000000000fffe        0x2 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+
+.rodata         0x000000000000e000      0x8ab
+                0x000000000000e000                . = ALIGN (0x2)
+ *(.plt)
+ *(.rodata .rodata.* .gnu.linkonce.r.* .const .const:*)
+ .rodata        0x000000000000e000        0x6 /tmp/ccxSwg8c.o
+ .rodata.msg_slow.1784
+                0x000000000000e006        0xa /tmp/ccxSwg8c.o
+ .rodata.msg_fast.1785
+                0x000000000000e010        0xa /tmp/ccxSwg8c.o
+ .rodata.msg_sinclair.1786
+                0x000000000000e01a        0xa /tmp/ccxSwg8c.o
+ .rodata.msg_datamath.1787
+                0x000000000000e024        0xa /tmp/ccxSwg8c.o
+ .rodata.hwkey_map
+                0x000000000000e02e       0x70 /tmp/ccxSwg8c.o
+ .rodata._masks
+                0x000000000000e09e      0x180 /tmp/ccxSwg8c.o
+                0x000000000000e09e                _masks
+ .rodata._opMap
+                0x000000000000e21e      0x15c /tmp/ccxSwg8c.o
+                0x000000000000e21e                _opMap
+ .rodata._rom   0x000000000000e37a      0x500 /tmp/ccxSwg8c.o
+                0x000000000000e37a                _rom
+ .rodata.segs2port1
+                0x000000000000e87a       0x29 /tmp/ccxSwg8c.o
+ .rodata.digit2p2
+                0x000000000000e8a3        0x8 /tmp/ccxSwg8c.o
+ *(.rodata1)
+ *(.gcc_except_table)
+ *(.gcc_except_table.*)
+
+.rodata2        0x000000000000e8ac        0x4
+                0x000000000000e8ac                . = ALIGN (0x2)
+                [!provide]                        PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end, .)
+                0x000000000000e8ac                . = ALIGN (0x2)
+                [!provide]                        PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end, .)
+                0x000000000000e8ac                . = ALIGN (0x2)
+                [!provide]                        PROVIDE (__fini_array_start, .)
+ *(.fini_array)
+ *(SORT(.fini_array.*))
+                [!provide]                        PROVIDE (__fini_array_end, .)
+                0x000000000000e8ac                . = ALIGN (0x2)
+ *(.eh_frame_hdr)
+ *(.eh_frame)
+ .eh_frame      0x000000000000e8ac        0x4 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtend_no_eh.o
+ *crtbegin*.o(.ctors)
+ *(EXCLUDE_FILE(*crtend*.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ *crtbegin*.o(.dtors)
+ *(EXCLUDE_FILE(*crtend*.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.text           0x000000000000e8b0      0xf2a
+                0x000000000000e8b0                . = ALIGN (0x2)
+                0x000000000000e8b0                PROVIDE (_start, .)
+ *(SORT(.crt_*))
+ .crt_0000start
+                0x000000000000e8b0        0x4 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+                0x000000000000e8b0                __crt0_start
+ .crt_0100init_bss
+                0x000000000000e8b4        0xe /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_bss.o)
+                0x000000000000e8b4                __crt0_init_bss
+ .crt_0300movedata
+                0x000000000000e8c2       0x14 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_movedata.o)
+                0x000000000000e8c2                __crt0_movedata
+ .crt_0800call_main
+                0x000000000000e8d6        0x6 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_main.o)
+                0x000000000000e8d6                __crt0_call_main
+ *(.lowtext .text .stub .text.* .gnu.linkonce.t.* .text:*)
+ .text.exec_add
+                0x000000000000e8dc       0x16 /tmp/ccxSwg8c.o
+                0x000000000000e8dc                exec_add
+ .text.exec_sub
+                0x000000000000e8f2       0x1a /tmp/ccxSwg8c.o
+                0x000000000000e8f2                exec_sub
+ .text.load_rom
+                0x000000000000e90c       0x50 /tmp/ccxSwg8c.o
+                0x000000000000e90c                load_rom
+ .text.execf    0x000000000000e95c       0xae /tmp/ccxSwg8c.o
+                0x000000000000e95c                execf
+ .text.execb    0x000000000000ea0a       0x80 /tmp/ccxSwg8c.o
+                0x000000000000ea0a                execb
+ .text.exec     0x000000000000ea8a      0x1f6 /tmp/ccxSwg8c.o
+                0x000000000000ea8a                exec
+ .text.step     0x000000000000ec80      0x204 /tmp/ccxSwg8c.o
+                0x000000000000ec80                step
+ .text.get_key  0x000000000000ee84       0x90 /tmp/ccxSwg8c.o
+                0x000000000000ee84                get_key
+ .text.led_clear
+                0x000000000000ef14       0x10 /tmp/ccxSwg8c.o
+                0x000000000000ef14                led_clear
+ .text.paradiso_loop
+                0x000000000000ef24      0x1e4 /tmp/ccxSwg8c.o
+                0x000000000000ef24                paradiso_loop
+ .text.show_msg
+                0x000000000000f108       0x3e /tmp/ccxSwg8c.o
+                0x000000000000f108                show_msg
+ .text.startup.main
+                0x000000000000f146      0x538 /tmp/ccxSwg8c.o
+                0x000000000000f146                main
+ .text.Timer0_A0_iSR
+                0x000000000000f67e       0x1e /tmp/ccxSwg8c.o
+                0x000000000000f67e                Timer0_A0_iSR
+ .text.udivmodhi4
+                0x000000000000f69c       0x40 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+                0x000000000000f69c                udivmodhi4
+ .text.__umodhi3
+                0x000000000000f6dc        0x8 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+                0x000000000000f6dc                __mspabi_remu
+ .text          0x000000000000f6e4       0x10 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(epilogue.o)
+                0x000000000000f6e4                __mspabi_func_epilog_7
+                0x000000000000f6e6                __mspabi_func_epilog_6
+                0x000000000000f6e8                __mspabi_func_epilog_5
+                0x000000000000f6ea                __mspabi_func_epilog_4
+                0x000000000000f6ec                __mspabi_func_epilog_3
+                0x000000000000f6ee                __mspabi_func_epilog_2
+                0x000000000000f6f0                __mspabi_func_epilog_1
+ .text.__mspabi_slli
+                0x000000000000f6f4        0xa /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+                0x000000000000f6f8                __mspabi_slli
+ .text.__mspabi_srai
+                0x000000000000f6fe        0xa /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+                0x000000000000f702                __mspabi_srai
+ .text.__mspabi_srli
+                0x000000000000f708        0xc /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+                0x000000000000f70e                __mspabi_srli
+ .text.__mulhi3
+                0x000000000000f714       0x46 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libmul_none.a(mpy.o)
+                0x000000000000f714                __mspabi_mpyi
+ .text.memcpy   0x000000000000f75a       0x1e /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memcpy.o)
+                0x000000000000f75a                memcpy
+ .text.memmove  0x000000000000f778       0x4e /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memmove.o)
+                0x000000000000f778                memmove
+ .text.memset   0x000000000000f7c6       0x14 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memset.o)
+                0x000000000000f7c6                memset
+ *(.text.*personality*)
+ *(.gnu.warning)
+ *(.interp .hash .dynsym .dynstr .gnu.version*)
+                [!provide]                        PROVIDE (__etext, .)
+                [!provide]                        PROVIDE (_etext, .)
+                [!provide]                        PROVIDE (etext, .)
+                0x000000000000f7da                . = ALIGN (0x2)
+ *(.init)
+ *(.fini)
+ *(.tm_clone_table)
+
+.data           0x0000000000000200        0xe load address 0x000000000000f7da
+                0x0000000000000200                . = ALIGN (0x2)
+                0x0000000000000200                PROVIDE (__datastart, .)
+ *(.jcr)
+ *(.data.rel.ro.local)
+ *(.data.rel.ro*)
+ *(.dynamic)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000000200        0x9 /tmp/ccxSwg8c.o
+ .data.key_row.1762
+                0x0000000000000209        0x1 /tmp/ccxSwg8c.o
+ .data.key_col.1763
+                0x000000000000020a        0x1 /tmp/ccxSwg8c.o
+ .data.stays    0x000000000000020b        0x1 /tmp/ccxSwg8c.o
+                0x000000000000020b                stays
+ .data.clicks   0x000000000000020c        0x1 /tmp/ccxSwg8c.o
+ .data._dActive
+                0x000000000000020d        0x1 /tmp/ccxSwg8c.o
+                0x000000000000020d                _dActive
+ *(.gnu.linkonce.d.*personality*)
+ *(.data1)
+ *(.got.plt)
+ *(.got)
+                0x000000000000020e                . = ALIGN (0x2)
+ *(.sdata .sdata.* .gnu.linkonce.s.* D_2 D_1)
+                0x000000000000020e                . = ALIGN (0x2)
+                0x000000000000020e                _edata = .
+                [!provide]                        PROVIDE (edata, .)
+                [!provide]                        PROVIDE (__dataend, .)
+                0x000000000000f7da                PROVIDE (__romdatastart, LOADADDR (.data))
+                0x000000000000000e                PROVIDE (__romdatacopysize, SIZEOF (.data))
+
+.bss            0x000000000000020e       0x68 load address 0x000000000000f7e8
+                0x000000000000020e                . = ALIGN (0x2)
+                0x000000000000020e                PROVIDE (__bssstart, .)
+ *(.dynbss)
+ *(.sbss .sbss.*)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss.pos       0x000000000000020e        0x1 /tmp/ccxSwg8c.o
+                0x000000000000020e                pos
+ .bss.blink     0x000000000000020f        0x1 /tmp/ccxSwg8c.o
+                0x000000000000020f                blink
+ .bss.g_state   0x0000000000000210        0x1 /tmp/ccxSwg8c.o
+                0x0000000000000210                g_state
+ .bss.last_sc   0x0000000000000211        0x1 /tmp/ccxSwg8c.o
+ .bss.scancode  0x0000000000000212        0x1 /tmp/ccxSwg8c.o
+ *fill*         0x0000000000000213        0x1 
+ .bss.ticks     0x0000000000000214        0x2 /tmp/ccxSwg8c.o
+ .bss._branch_addr
+                0x0000000000000216        0x2 /tmp/ccxSwg8c.o
+                0x0000000000000216                _branch_addr
+ .bss._base_addr
+                0x0000000000000218        0x2 /tmp/ccxSwg8c.o
+                0x0000000000000218                _base_addr
+ .bss._address  0x000000000000021a        0x2 /tmp/ccxSwg8c.o
+                0x000000000000021a                _address
+ .bss._cc       0x000000000000021c        0x1 /tmp/ccxSwg8c.o
+                0x000000000000021c                _cc
+ *fill*         0x000000000000021d        0x1 
+ .bss._instruction
+                0x000000000000021e        0x2 /tmp/ccxSwg8c.o
+                0x000000000000021e                _instruction
+ .bss._keyPressed
+                0x0000000000000220        0x1 /tmp/ccxSwg8c.o
+                0x0000000000000220                _keyPressed
+ .bss._keyStrobe
+                0x0000000000000221        0x1 /tmp/ccxSwg8c.o
+                0x0000000000000221                _keyStrobe
+ .bss._sinclair
+                0x0000000000000222        0x1 /tmp/ccxSwg8c.o
+                0x0000000000000222                _sinclair
+                0x0000000000000224                . = ALIGN (0x2)
+ *fill*         0x0000000000000223        0x1 
+ *(COMMON)
+ COMMON         0x0000000000000224       0x52 /tmp/ccxSwg8c.o
+                0x0000000000000224                _opCode
+                0x000000000000022a                output
+                0x0000000000000233                regs
+                0x0000000000000270                _flgs
+                [!provide]                        PROVIDE (__bssend, .)
+                0x0000000000000068                PROVIDE (__bsssize, SIZEOF (.bss))
+
+.noinit         0x0000000000000276        0x0 load address 0x000000000000f7e8
+                0x0000000000000276                . = ALIGN (0x2)
+                [!provide]                        PROVIDE (__noinit_start, .)
+ *(.noinit)
+                0x0000000000000276                . = ALIGN (0x2)
+                [!provide]                        PROVIDE (__noinit_end, .)
+                0x0000000000000276                end = .
+
+.heap           0x0000000000000276        0x4 load address 0x000000000000f7e8
+                0x0000000000000276                . = ALIGN (0x2)
+                0x0000000000000276                __heap_start__ = .
+                0x0000000000000276                _end = __heap_start__
+                [!provide]                        PROVIDE (end, .)
+ *(.heap)
+                0x0000000000000276                _end = .
+                [!provide]                        PROVIDE (end, .)
+                0x0000000000000276        0x4 LONG 0x0
+                0x000000000000027a                __heap_end__ = .
+                0x000000000000027a                __HeapLimit = __heap_end__
+
+.stack          0x0000000000000300        0x0
+                0x0000000000000300                PROVIDE (__stack, .)
+ *(.stack)
+
+.infoA
+
+.infoB
+
+.infoC
+
+.infoD
+
+.MSP430.attributes
+                0x0000000000000000       0x17
+ *(.MSP430.attributes)
+ .MSP430.attributes
+                0x0000000000000000       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+ .MSP430.attributes
+                0x0000000000000017       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtbegin_no_eh.o
+ .MSP430.attributes
+                0x000000000000002e       0x17 /tmp/ccxSwg8c.o
+ .MSP430.attributes
+                0x0000000000000045       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+ .MSP430.attributes
+                0x000000000000005c       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(epilogue.o)
+ .MSP430.attributes
+                0x0000000000000073       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+ .MSP430.attributes
+                0x000000000000008a       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+ .MSP430.attributes
+                0x00000000000000a1       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+ .MSP430.attributes
+                0x00000000000000b8       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libmul_none.a(mpy.o)
+ .MSP430.attributes
+                0x00000000000000cf       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memcpy.o)
+ .MSP430.attributes
+                0x00000000000000e6       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_bss.o)
+ .MSP430.attributes
+                0x00000000000000fd       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_movedata.o)
+ .MSP430.attributes
+                0x0000000000000114       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_main.o)
+ .MSP430.attributes
+                0x000000000000012b       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memmove.o)
+ .MSP430.attributes
+                0x0000000000000142       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memset.o)
+ .MSP430.attributes
+                0x0000000000000159       0x17 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtend_no_eh.o
+ *(.gnu.attributes)
+ *(__TI_build_attributes)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x39
+ *(.comment)
+ .comment       0x0000000000000000       0x39 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtbegin_no_eh.o
+                                         0x3a (size before relaxing)
+ .comment       0x0000000000000039       0x3a /tmp/ccxSwg8c.o
+ .comment       0x0000000000000039       0x3a /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+ .comment       0x0000000000000039       0x3a /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libmul_none.a(mpy.o)
+ .comment       0x0000000000000039       0x3a /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memcpy.o)
+ .comment       0x0000000000000039       0x3a /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memmove.o)
+ .comment       0x0000000000000039       0x3a /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memset.o)
+ .comment       0x0000000000000039       0x3a /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtend_no_eh.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+/DISCARD/
+ *(.note.GNU-stack)
+                [!provide]                        PROVIDE (IE1, 0x0)
+                [!provide]                        PROVIDE (IFG1, 0x2)
+                0x0000000000000056                PROVIDE (DCOCTL, 0x56)
+                0x0000000000000057                PROVIDE (BCSCTL1, 0x57)
+                [!provide]                        PROVIDE (BCSCTL2, 0x58)
+                [!provide]                        PROVIDE (BCSCTL3, 0x53)
+                0x0000000000000128                PROVIDE (FCTL1, 0x128)
+                0x000000000000012a                PROVIDE (FCTL2, 0x12a)
+                0x000000000000012c                PROVIDE (FCTL3, 0x12c)
+                0x0000000000000020                PROVIDE (P1IN, 0x20)
+                0x0000000000000021                PROVIDE (P1OUT, 0x21)
+                0x0000000000000022                PROVIDE (P1DIR, 0x22)
+                0x0000000000000023                PROVIDE (P1IFG, 0x23)
+                0x0000000000000024                PROVIDE (P1IES, 0x24)
+                0x0000000000000025                PROVIDE (P1IE, 0x25)
+                0x0000000000000026                PROVIDE (P1SEL, 0x26)
+                [!provide]                        PROVIDE (P1SEL2, 0x41)
+                0x0000000000000027                PROVIDE (P1REN, 0x27)
+                [!provide]                        PROVIDE (P2IN, 0x28)
+                0x0000000000000029                PROVIDE (P2OUT, 0x29)
+                0x000000000000002a                PROVIDE (P2DIR, 0x2a)
+                [!provide]                        PROVIDE (P2IFG, 0x2b)
+                [!provide]                        PROVIDE (P2IES, 0x2c)
+                [!provide]                        PROVIDE (P2IE, 0x2d)
+                0x000000000000002e                PROVIDE (P2SEL, 0x2e)
+                [!provide]                        PROVIDE (P2SEL2, 0x42)
+                0x000000000000002f                PROVIDE (P2REN, 0x2f)
+                [!provide]                        PROVIDE (TA0IV, 0x12e)
+                0x0000000000000160                PROVIDE (TA0CTL, 0x160)
+                0x0000000000000162                PROVIDE (TA0CCTL0, 0x162)
+                [!provide]                        PROVIDE (TA0CCTL1, 0x164)
+                [!provide]                        PROVIDE (TA0CCTL2, 0x166)
+                [!provide]                        PROVIDE (TA0R, 0x170)
+                0x0000000000000172                PROVIDE (TA0CCR0, 0x172)
+                [!provide]                        PROVIDE (TA0CCR1, 0x174)
+                [!provide]                        PROVIDE (TA0CCR2, 0x176)
+                [!provide]                        PROVIDE (USICTL0, 0x78)
+                [!provide]                        PROVIDE (USICTL1, 0x79)
+                [!provide]                        PROVIDE (USICKCTL, 0x7a)
+                [!provide]                        PROVIDE (USICNT, 0x7b)
+                [!provide]                        PROVIDE (USISRL, 0x7c)
+                [!provide]                        PROVIDE (USISRH, 0x7d)
+                [!provide]                        PROVIDE (USICTL, 0x78)
+                [!provide]                        PROVIDE (USICCTL, 0x7a)
+                [!provide]                        PROVIDE (USISR, 0x7c)
+                0x0000000000000120                PROVIDE (WDTCTL, 0x120)
+                [!provide]                        PROVIDE (CALDCO_16MHZ, 0x10f8)
+                [!provide]                        PROVIDE (CALBC1_16MHZ, 0x10f9)
+                [!provide]                        PROVIDE (CALDCO_12MHZ, 0x10fa)
+                [!provide]                        PROVIDE (CALBC1_12MHZ, 0x10fb)
+                0x00000000000010fc                PROVIDE (CALDCO_8MHZ, 0x10fc)
+                0x00000000000010fd                PROVIDE (CALBC1_8MHZ, 0x10fd)
+                0x00000000000010fe                PROVIDE (CALDCO_1MHZ, 0x10fe)
+                0x00000000000010ff                PROVIDE (CALBC1_1MHZ, 0x10ff)
+                [!provide]                        PROVIDE (TLV_CHECKSUM, 0x10c0)
+                [!provide]                        PROVIDE (TLV_DCO_30_TAG, 0x10f6)
+                [!provide]                        PROVIDE (TLV_DCO_30_LEN, 0x10f7)
+                [!provide]                        PROVIDE (TLV_ADC10_1_TAG, 0x10da)
+                [!provide]                        PROVIDE (TLV_ADC10_1_LEN, 0x10db)
+LOAD /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a
+LOAD /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/crtend_no_eh.o
+LOAD /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a
+OUTPUT(tms0800_pcb19.elf elf32-msp430)
+
+.infomem        0x0000000000001040        0xe
+ .infomem       0x0000000000001040        0xe /tmp/ccxSwg8c.o
+                0x0000000000001040                infomem
+
+Cross Reference Table
+
+Symbol                                            File
+BCSCTL1                                           /tmp/ccxSwg8c.o
+CALBC1_1MHZ                                       /tmp/ccxSwg8c.o
+CALBC1_8MHZ                                       /tmp/ccxSwg8c.o
+CALDCO_1MHZ                                       /tmp/ccxSwg8c.o
+CALDCO_8MHZ                                       /tmp/ccxSwg8c.o
+DCOCTL                                            /tmp/ccxSwg8c.o
+FCTL1                                             /tmp/ccxSwg8c.o
+FCTL2                                             /tmp/ccxSwg8c.o
+FCTL3                                             /tmp/ccxSwg8c.o
+P1DIR                                             /tmp/ccxSwg8c.o
+P1IE                                              /tmp/ccxSwg8c.o
+P1IES                                             /tmp/ccxSwg8c.o
+P1IFG                                             /tmp/ccxSwg8c.o
+P1IN                                              /tmp/ccxSwg8c.o
+P1OUT                                             /tmp/ccxSwg8c.o
+P1REN                                             /tmp/ccxSwg8c.o
+P1SEL                                             /tmp/ccxSwg8c.o
+P2DIR                                             /tmp/ccxSwg8c.o
+P2OUT                                             /tmp/ccxSwg8c.o
+P2REN                                             /tmp/ccxSwg8c.o
+P2SEL                                             /tmp/ccxSwg8c.o
+Port_1                                            /tmp/ccxSwg8c.o
+TA0CCR0                                           /tmp/ccxSwg8c.o
+TA0CCTL0                                          /tmp/ccxSwg8c.o
+TA0CTL                                            /tmp/ccxSwg8c.o
+Timer0_A0_iSR                                     /tmp/ccxSwg8c.o
+WDTCTL                                            /tmp/ccxSwg8c.o
+__bsssize                                         /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_bss.o)
+__bssstart                                        /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_bss.o)
+__crt0_call_main                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_main.o)
+                                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+__crt0_init_bss                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_bss.o)
+                                                  /tmp/ccxSwg8c.o
+__crt0_movedata                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_movedata.o)
+                                                  /tmp/ccxSwg8c.o
+__crt0_start                                      /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+__datastart                                       /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_movedata.o)
+__high_bsssize                                    /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+__high_bssstart                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+__high_datastart                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+__mspabi_divi                                     /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+__mspabi_divu                                     /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+__mspabi_func_epilog_1                            /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(epilogue.o)
+__mspabi_func_epilog_2                            /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(epilogue.o)
+                                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memmove.o)
+__mspabi_func_epilog_3                            /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(epilogue.o)
+__mspabi_func_epilog_4                            /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(epilogue.o)
+__mspabi_func_epilog_5                            /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(epilogue.o)
+__mspabi_func_epilog_6                            /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(epilogue.o)
+                                                  /tmp/ccxSwg8c.o
+__mspabi_func_epilog_7                            /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(epilogue.o)
+                                                  /tmp/ccxSwg8c.o
+__mspabi_mpyi                                     /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libmul_none.a(mpy.o)
+                                                  /tmp/ccxSwg8c.o
+__mspabi_remi                                     /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+__mspabi_remu                                     /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)
+                                                  /tmp/ccxSwg8c.o
+__mspabi_slli                                     /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+                                                  /tmp/ccxSwg8c.o
+__mspabi_slli_1                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_10                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_11                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_12                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_13                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_14                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_15                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_2                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_3                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_4                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_5                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_6                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_7                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_8                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slli_9                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll                                     /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_1                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_10                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_11                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_12                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_13                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_14                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_15                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_2                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_3                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_4                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_5                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_6                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_7                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_8                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_slll_9                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_sllll                                    /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(slli.o)
+__mspabi_srai                                     /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+                                                  /tmp/ccxSwg8c.o
+__mspabi_srai_1                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_10                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_11                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_12                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_13                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_14                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_15                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_2                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_3                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_4                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_5                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_6                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_7                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_8                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srai_9                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral                                     /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_1                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_10                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_11                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_12                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_13                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_14                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_15                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_2                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_3                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_4                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_5                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_6                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_7                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_8                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_sral_9                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srall                                    /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srai.o)
+__mspabi_srli                                     /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+                                                  /tmp/ccxSwg8c.o
+__mspabi_srli_1                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_10                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_11                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_12                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_13                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_14                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_15                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_2                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_3                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_4                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_5                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_6                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_7                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_8                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srli_9                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll                                     /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_1                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_10                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_11                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_12                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_13                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_14                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_15                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_2                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_3                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_4                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_5                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_6                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_7                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_8                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srll_9                                   /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__mspabi_srlll                                    /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(srli.o)
+__rom_highdatacopysize                            /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+__rom_highdatastart                               /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+__romdatacopysize                                 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_movedata.o)
+__romdatastart                                    /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_movedata.o)
+__stack                                           /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+__upper_data_init                                 /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/crt0.o
+_address                                          /tmp/ccxSwg8c.o
+_base_addr                                        /tmp/ccxSwg8c.o
+_branch_addr                                      /tmp/ccxSwg8c.o
+_cc                                               /tmp/ccxSwg8c.o
+_dActive                                          /tmp/ccxSwg8c.o
+_flgs                                             /tmp/ccxSwg8c.o
+_instruction                                      /tmp/ccxSwg8c.o
+_keyPressed                                       /tmp/ccxSwg8c.o
+_keyStrobe                                        /tmp/ccxSwg8c.o
+_mask                                             /tmp/ccxSwg8c.o
+_masks                                            /tmp/ccxSwg8c.o
+_opCode                                           /tmp/ccxSwg8c.o
+_opMap                                            /tmp/ccxSwg8c.o
+_rom                                              /tmp/ccxSwg8c.o
+_sinclair                                         /tmp/ccxSwg8c.o
+blink                                             /tmp/ccxSwg8c.o
+exec                                              /tmp/ccxSwg8c.o
+exec_add                                          /tmp/ccxSwg8c.o
+exec_sub                                          /tmp/ccxSwg8c.o
+execb                                             /tmp/ccxSwg8c.o
+execf                                             /tmp/ccxSwg8c.o
+g_state                                           /tmp/ccxSwg8c.o
+get_key                                           /tmp/ccxSwg8c.o
+infomem                                           /tmp/ccxSwg8c.o
+led_clear                                         /tmp/ccxSwg8c.o
+load_rom                                          /tmp/ccxSwg8c.o
+main                                              /tmp/ccxSwg8c.o
+                                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_main.o)
+memcpy                                            /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memcpy.o)
+                                                  /tmp/ccxSwg8c.o
+memmove                                           /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memmove.o)
+                                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_movedata.o)
+memset                                            /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libc.a(lib_a-memset.o)
+                                                  /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/../../../../msp430-elf/lib/430/libcrt.a(crt_bss.o)
+opsWithK                                          /tmp/ccxSwg8c.o
+output                                            /tmp/ccxSwg8c.o
+paradiso_loop                                     /tmp/ccxSwg8c.o
+pos                                               /tmp/ccxSwg8c.o
+regs                                              /tmp/ccxSwg8c.o
+show_msg                                          /tmp/ccxSwg8c.o
+stays                                             /tmp/ccxSwg8c.o
+step                                              /tmp/ccxSwg8c.o
+udivmodhi4                                        /home/chrisc/ti/msp430-gcc/bin/../lib/gcc/msp430-elf/8.3.1/430/libgcc.a(lib2divHI.o)

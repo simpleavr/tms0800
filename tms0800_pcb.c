@@ -519,9 +519,9 @@ int main(void) {
 					P2OUT = BIT3;
 					P2DIR = BIT3;
 					//P2DIR = 0x00;
-					P2IE  |= BIT4;
 					P2IES |= BIT4;		// hi-low trip
 					P2IFG &= ~BIT4;
+					P2IE  |= BIT4;
 					_BIS_SR(LPM4_bits + GIE);
 					P2IE  &= ~BIT4;
 					clicks = SECS_TO_SLEEP;

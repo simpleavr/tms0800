@@ -21,7 +21,19 @@
   . NOT tested w/ CCS, IAR, should also work w/ tweaks.
   . compile w/ msp430-gcc like so
 
-	msp430-gcc -Os -Wall -ffunction-sections -fdata-sections -fno-inline-small-functions -Wl,-Map=tms0800x.map,--cref -Wl,--relax -Wl,--gc-sections -I<your mpsgcc>/msp430/include -mmcu=msp430g2553 -o tms0800.elf tms0800x.c
+	MMCU=msp430g2402
+	DMCU=G2402
+
+	GCCBIN=$HOME/ti/msp430-gcc/bin
+	INCL="-I $HOME/ti/msp430-gcc/include -L $HOME/ti/msp430-gcc/include"
+
+	$GCCBIN/msp430-elf-gcc -Os -Wall -ffunction-sections -fdata-sections -fno-inline-small-functions -Wl,-Map=$PRG.map,--cref -Wl,--relax -Wl,--gc-sections,--section-start=.infomem=0x01040 $INCL -mmcu=$MMCU -o $PRG.elf $PRG.c
+
+	$GCCBIN/msp430-elf-objdump -DS $PRG.elf > $PRG.lst
+	$GCCBIN/msp430-elf-strip $PRG.elf
+	$GCCBIN/msp430-elf-size --totals $PRG.elf
+	$GCCBIN/msp430-elf-objcopy -O ihex $PRG.elf $PRG.hex
+
 
   September 2013 initial check-in
   June 2014 
@@ -317,6 +329,12 @@ void show_msg(uint8_t const *ptr) {
 	clicks = 3; while (clicks && !get_key()) __asm(" nop");
 }
 
+void __attribute__ ((section (".infomem"))) infomem() {
+	__asm(
+		".byte 0x1d, 0x11, 0x0a, 0x17, 0x14, 0x24, 0x22, 0x18, 0x1e, 0x08,\n"
+	);
+}
+
 //________________________________________________________________________________
 int main(void) {
 	WDTCTL = WDTPW + WDTHOLD;
@@ -528,9 +546,11 @@ int main(void) {
 					P1OUT = BIT6|BIT7;	// BIT7 is decimal + digit 0 share
 					P1DIR = BIT6;
 					//P2DIR = 0x00;
-					P1IE  |= BIT5;
+					//_BIC_SR(GIE);
+					_BIC_SR(GIE);
 					P1IES |= BIT5;		// hi-low trip
 					P1IFG &= ~BIT5;
+					P1IE  |= BIT5;
 					_BIS_SR(LPM4_bits + GIE);
 					P1IE  &= ~BIT5;
 
@@ -629,6 +649,8 @@ int main(void) {
 					show_msg(greetings);
 					WDTCTL = 0;		// s/w reset
 					break;
+				case 99:
+					infomem();
 				default: 
 					if (c < 0x30) {			// calculator keys
 						key_presist = 100;	// emulate bouncing delay
@@ -717,8 +739,7 @@ void Timer0_A0_iSR(void) {
 	paradiso_loop();
 }
 
-#pragma vector=PORT1_VECTOR
+//#pragma vector=PORT1_VECTOR
 __interrupt void Port_1(void) {
 	P1IFG &= ~BIT5;
-	_BIC_SR_IRQ(LPM4_bits); 
-} 
+	_BIC_SR_IRQ(LPM4_bits); } 
