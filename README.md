@@ -46,13 +46,13 @@ nice if you give credit, mention source(s) if you adopt much of the code
 
 based on work of Ken Shirriff, and others, please visit
 http://righto.com/ti and http://righto.com/sinclair for details
-chris chung (www.simpleavr.com)
+chris chung https://simpleavr.github.io/tms0800/
 
 September 2013
 
 - h/w (UI booster) based on another project (ezs430trainer)
 
-http://www.simpleavr.com/msp430-projects/ez430trainer
+[http://www.simpleavr.com/msp430-projects/ez430trainer](https://simpleavr.github.io/old_projects/ez_trainer/)
 
 - test compiled and run on win7 w/ cygwin, mint 14 linux.
 - NOT tested w/ CCS, IAR, should also work w/ tweaks.
