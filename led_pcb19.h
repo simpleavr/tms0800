@@ -12,8 +12,8 @@
             |     digit 3 P2.2|--/-
             |     digit 4 P2.3|--/-
             |     digit 5 P2.4|--/-                                            
-            |     digit 6 P2.5|--/-                                            
-            |     digit 7 P2.6|--/-        segment a to g + dot........
+            |     digit 6 P2.5|--/-   _ _                                      
+            |     digit 7 P2.6|--/-   ^ ^  segment a to g + dot........
             |                 |       /                                 ....\
             |                 |      /                                       \
             |   segment A P1.0|-----+-----+-----+-----+-----+-----+-----+-----+

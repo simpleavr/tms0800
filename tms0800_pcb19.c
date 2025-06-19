@@ -28,6 +28,7 @@
 	INCL="-I $HOME/ti/msp430-gcc/include -L $HOME/ti/msp430-gcc/include"
 
 	$GCCBIN/msp430-elf-gcc -Os -Wall -ffunction-sections -fdata-sections -fno-inline-small-functions -Wl,-Map=$PRG.map,--cref -Wl,--relax -Wl,--gc-sections,--section-start=.infomem=0x01040 $INCL -mmcu=$MMCU -o $PRG.elf $PRG.c
+	-Wl,--gc-sections,--section-start=.infomem=0x01040
 
 	$GCCBIN/msp430-elf-objdump -DS $PRG.elf > $PRG.lst
 	$GCCBIN/msp430-elf-strip $PRG.elf
@@ -61,7 +62,7 @@
 #include <msp430.h>
 
 #include <stdint.h>
-#define G2302
+#define G2452
 
 #define V2
 
@@ -167,7 +168,7 @@ static const char hwkey_map[] = {		// converts to tms080x scan code
 #endif
 };
 
-#define SECS_TO_SLEEP	60
+#define SECS_TO_SLEEP	60*60/48
 
 static volatile uint16_t ticks = 0;
 static volatile uint8_t clicks = SECS_TO_SLEEP;
@@ -213,7 +214,8 @@ uint8_t get_key() {
 }
 
 volatile uint8_t output[9];
-volatile uint8_t stays=0x40, blink=0; 
+volatile uint8_t stays=0x40;
+volatile uint16_t blink=0; 
 volatile int8_t pos=0;
 //________________________________________________________________________________
 void led_clear() {
@@ -235,6 +237,13 @@ void paradiso_loop() {
 	if (stays & 0xf0) { 
 		stays -= 0x10;
 		if (!(stays & 0xf0)) {		// setup to use "dark" cycles for key scan
+			P2DIR = 0x00;
+			P2REN = ~0x00;
+            P2OUT = ~0x00;
+			P1DIR = 0x00;
+			P1REN = ~0x00;
+            P1OUT = 0x00;
+            /*
 			P1DIR = 0x00;
 			P1REN = 0xff;
 			P1OUT = 0x00;	// be inputs w/ pull-ups
@@ -242,6 +251,7 @@ void paradiso_loop() {
 			//P2REN = P2OUT = 0x00;
 			P2REN = 0xff;
 			P2OUT = 0xff;
+            */
 		}//if
 		else
 		return;
@@ -290,18 +300,27 @@ void paradiso_loop() {
 		return;
 	}//if
 
-	if ((ticks&(1<<11)) || !(blink&(1<<pos))) {
+	//if ((ticks&(1<<11)) || !(blink&(1<<pos))) {
+	if (!(blink&(1<<pos)) ||
+	((g_state&ST_SLOW) && ticks&(1<<9)) ||
+	(!(g_state&ST_SLOW) && ticks&(1<<11))) {
 		uint8_t seg = output[pos];
 
-		P1OUT = 0xff;
-		P1REN = ~seg;
-		P1DIR = seg;
+		//P1REN = ~seg;
+		//P1DIR = seg;
+		//P1OUT = 0xff;
 		if (pos == 0) {
-			P1DIR |= BIT7;
-			P1OUT &= ~BIT7;
-			P1REN &= ~BIT7;
+			P2OUT = 0x00;
+			P2REN = ~0x00;
+			P2DIR = 0x00;
+			P1OUT = seg;
+            P1REN = 0x00;
+			P1DIR = BIT7|SEG_G_P1;
 		}//if
 		else {
+            P1REN = ~seg;
+            P1DIR = seg;
+            P1OUT = seg;
 			P2OUT = ~digit2p2[pos-1];
 			P2REN = 0;
 			P2DIR = digit2p2[pos-1];
@@ -331,7 +350,7 @@ void show_msg(uint8_t const *ptr) {
 
 void __attribute__ ((section (".infomem"))) infomem() {
 	__asm(
-		".byte 0x1d, 0x11, 0x0a, 0x17, 0x14, 0x24, 0x22, 0x18, 0x1e, 0x08,\n"
+        ".byte 0x24, 0x1d, 0x11, 0x0a, 0x17, 0x14, 0x22, 0x18, 0x1e, 0x08,\n"
 	);
 }
 
@@ -435,9 +454,10 @@ int main(void) {
 						POS_w,
 						POS__,
 					};
+                    greetings[0] = POS__;
 					for (i=0;i<9;i++) output[i] = segs2port1[greetings[i]];
-					uint8_t k=0, last_k=0, cpos=0;
-					blink = 1;
+					uint8_t k=0, last_k=0, cpos=1;
+					blink = 2;
 					while (cpos<9) {
 						if ((k=get_key())) {
 							switch (k) {
@@ -590,8 +610,8 @@ int main(void) {
 						POS__,
 					};
 					for (i=0;i<9;i++) output[i] = segs2port1[greetings[i]];
-					uint8_t k=0, last_k=0, cpos=0;
-					blink = 1;
+					uint8_t k=0, last_k=0, cpos=1;
+					blink = 2;
 					while (cpos<9) {
 						if ((k=get_key())) {
 							switch (k) {
